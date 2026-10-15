@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KRUPS Coffee Crush Experience SA403BJ0 使用手冊（中文速查）</title>
+<style>
+  :root {
+    --bg: #faf7f3; --card: #ffffff; --ink: #2a211b; --muted: #6f625a;
+    --accent: #e0661d; --accent-soft: #fdeee3; --line: #e8dfd6;
+    --warn: #b3261e; --warn-soft: #fdecea; --ok: #1e7a4c; --ok-soft: #e6f4ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1714; --card: #26201c; --ink: #f1e9e2; --muted: #b3a69c;
+      --accent: #ff8a3d; --accent-soft: #3a2a1f; --line: #3b322c;
+      --warn: #ff8a80; --warn-soft: #3d2322; --ok: #7dd3a8; --ok-soft: #1f3329;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.7; font-size: 16px;
+  }
+  header.hero {
+    background: linear-gradient(135deg, #2a211b, #4a3627); color: #fff;
+    padding: 28px 20px 22px;
+  }
+  header.hero h1 { margin: 0 0 4px; font-size: 1.5rem; letter-spacing: .02em; }
+  header.hero p { margin: 0; opacity: .85; font-size: .95rem; }
+  header.hero .tag {
+    display: inline-block; background: var(--accent); color: #fff; border-radius: 999px;
+    padding: 2px 10px; font-size: .8rem; margin-bottom: 8px;
+  }
+  nav.toc {
+    position: sticky; top: 0; z-index: 10; background: var(--card);
+    border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap;
+    padding: 8px 12px; -webkit-overflow-scrolling: touch;
+  }
+  nav.toc a {
+    display: inline-block; color: var(--ink); text-decoration: none; font-size: .9rem;
+    padding: 6px 12px; border-radius: 999px; background: var(--accent-soft); margin-right: 6px;
+  }
+  nav.toc a:hover { background: var(--accent); color: #fff; }
+  main { max-width: 860px; margin: 0 auto; padding: 16px; }
+  section {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 18px 10px; margin: 16px 0;
+  }
+  h2 { margin: 0 0 10px; font-size: 1.25rem; display: flex; align-items: center; gap: 8px; }
+  h2 .num {
+    background: var(--accent); color: #fff; width: 28px; height: 28px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center; font-size: .9rem; flex: none;
+  }
+  h3 { font-size: 1.05rem; margin: 18px 0 6px; }
+  ol, ul { padding-left: 1.3em; margin: 6px 0 12px; }
+  li { margin: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-size: .93rem; }
+  th, td { border: 1px solid var(--line); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--accent-soft); white-space: nowrap; }
+  .table-wrap { overflow-x: auto; }
+  .box { border-radius: 10px; padding: 10px 14px; margin: 10px 0 14px; font-size: .95rem; }
+  .box.warn { background: var(--warn-soft); border-left: 4px solid var(--warn); }
+  .box.tip  { background: var(--ok-soft);   border-left: 4px solid var(--ok); }
+  .box.info { background: var(--accent-soft); border-left: 4px solid var(--accent); }
+  .box strong:first-child { display: block; margin-bottom: 2px; }
+  kbd {
+    display: inline-block; font-family: inherit; font-size: .85em; font-weight: 600;
+    border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px;
+    padding: 0 6px; background: var(--bg); white-space: nowrap;
+  }
+  kbd.go { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 10px 0 14px; }
+  .chip { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--bg); }
+  .chip b { display: block; }
+  .chip small { color: var(--muted); }
+  .muted { color: var(--muted); font-size: .88rem; }
+  footer { text-align: center; color: var(--muted); font-size: .82rem; padding: 10px 16px 40px; }
+  footer a, section a { color: var(--accent); }
+  .quick ol li { margin: 6px 0; }
+  .panel {
+    background: #1c1c1c; color: #eee; border-radius: 12px; padding: 14px; margin: 10px 0 14px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; text-align: center; font-size: .78rem;
+  }
+  .panel div { background: #2b2b2b; border-radius: 8px; padding: 8px 4px; }
+  .panel .start { background: var(--accent); color: #fff; font-weight: 700; }
+  .panel .lbl { display: block; color: #aaa; font-size: .7rem; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">全自動義式咖啡機</span>
+  <h1>KRUPS Coffee Crush Experience</h1>
+  <p>型號 SA403BJ0（日本版 KRUPS by T-fal）・中文速查手冊</p>
+</header>
+
+<nav class="toc">
+  <a href="#quick">⚡ 30 秒速查</a>
+  <a href="#first">首次使用</a>
+  <a href="#parts">各部位與面板</a>
+  <a href="#brew">煮咖啡</a>
+  <a href="#ground">咖啡粉模式</a>
+  <a href="#milk">打奶泡</a>
+  <a href="#water">熱水</a>
+  <a href="#clean">清潔</a>
+  <a href="#descale">除垢</a>
+  <a href="#lights">指示燈</a>
+  <a href="#trouble">故障排除</a>
+  <a href="#recipe">飲品配方</a>
+  <a href="#spec">規格</a>
+</nav>
+
+<main>
+
+<!-- 速查 -->
+<section id="quick" class="quick">
+  <h2><span class="num">⚡</span>30 秒速查：最常用的操作</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>我要…</th><th>怎麼按</th></tr>
+    <tr><td>開機</td><td>按中間橘色 <kbd class="go">START/STOP</kbd></td></tr>
+    <tr><td>關機</td><td>長按 <kbd class="go">START/STOP</kbd> 2 秒（閒置 8 分鐘會自動關機）</td></tr>
+    <tr><td>煮一杯咖啡</td><td>選 <kbd>ESPRESSO</kbd> / <kbd>LUNGO</kbd> / <kbd>FILTER COFFEE</kbd> / <kbd>COLD BREW</kbd> → 調濃度、份量、溫度 → <kbd class="go">START/STOP</kbd></td></tr>
+    <tr><td>中途停止出咖啡</td><td>再按一次 <kbd class="go">START/STOP</kbd></td></tr>
+    <tr><td>用咖啡粉（例如低咖啡因）</td><td>粉倒進咖啡抽屜的粉槽 → 選飲品 → 一直按<b>濃度（咖啡豆圖示）</b>鍵直到出現<b>咖啡粉圖示</b> → <kbd class="go">START/STOP</kbd></td></tr>
+    <tr><td>打奶泡 / 熱牛奶</td><td><kbd>STEAM</kbd> → 噴嘴滑套往上＝打發＋加熱、往下＝只加熱 → 噴嘴插入牛奶 → <kbd class="go">START/STOP</kbd>，好了再按一次停止</td></tr>
+    <tr><td>出熱水（泡茶）</td><td><kbd>HOT WATER</kbd> → 選份量（S/M/L）、溫度（約 70/80/90°C）→ <kbd class="go">START/STOP</kbd></td></tr>
+    <tr><td>清洗程序（Rinse）</td><td>同時按 <kbd>咖啡豆（濃度）</kbd>＋<kbd>ESPRESSO</kbd> → <kbd class="go">START/STOP</kbd></td></tr>
+    <tr><td>除垢程序（CALC）</td><td>同時<b>長按 3 秒</b> <kbd>咖啡豆（濃度）</kbd>＋<kbd>LUNGO</kbd> → <kbd class="go">START/STOP</kbd></td></tr>
+    <tr><td>倒咖啡渣</td><td>抽出咖啡抽屜 → 粉槽倒扣在垃圾桶上 → 按背面按鈕把渣推出 → 用水沖一下</td></tr>
+  </table>
+  </div>
+  <div class="box warn"><strong>⚠ 最重要的一條</strong>研磨粗細旋鈕<b>只能在磨豆機運轉時（正在煮咖啡時）轉動</b>。機器沒在磨豆時轉，可能弄壞內部機構。</div>
+</section>
+
+<!-- 首次使用 -->
+<section id="first">
+  <h2><span class="num">1</span>第一次使用前要做的事</h2>
+  <div class="box info"><strong>先知道</strong>機器出廠前已經用咖啡測試過，雖然清潔過，內部可能還有一點咖啡殘渣，屬正常現象，不影響使用。</div>
+  <ol>
+    <li><b>拆箱檢查</b>：小心取出機器，確認零件齊全、無損傷。</li>
+    <li><b>撕掉貼紙與紙條</b>：撕下<b>咖啡豆槽內側的紙條/貼紙</b>，以及<b>控制面板上的保護貼</b>。</li>
+    <li><b>水箱加水</b>：取下水箱（有提把），加冷水到 <b>MAX 最高水位線</b>，裝回機器（要確實卡到底）。</li>
+    <li><b>放杯子</b>：在出水口下方放一個<b>至少 70 ml</b> 的杯子。</li>
+    <li><b>插電開機</b>：插上電源，按中間橘色 <kbd class="go">START/STOP</kbd>。</li>
+    <li><b>做第一次清洗（不放咖啡）</b>：按 <kbd>ESPRESSO</kbd>，再<b>同時按 <kbd>ESPRESSO</kbd> ＋ <kbd>咖啡豆（濃度）</kbd></b> 啟動清洗程序，機器會自動開始並自動結束。</li>
+    <li><b>清洗咖啡抽屜</b>：抽出咖啡抽屜，用清水沖洗後裝回。</li>
+    <li><b>倒豆子開始用</b>：把新鮮咖啡豆倒進上方豆槽即可開始煮咖啡。</li>
+  </ol>
+  <div class="box tip"><strong>💡 實用建議（非原廠手冊內容）</strong>
+    <ul>
+      <li>前 2～3 杯當作「暖機＋調整研磨」用，味道穩定後再認真評價。</li>
+      <li>建議用<b>過濾水/軟水</b>，可減少水垢、延長除垢間隔；不要用礦物質很高的礦泉水。</li>
+      <li>全自動機一般建議避免<b>表面很油亮的深烘豆、調味豆</b>，容易讓磨豆機與管路卡油。</li>
+      <li>右側噴嘴要轉動、放奶鋼杯，<b>機器右邊請留一點空間</b>。</li>
+    </ul>
+  </div>
+  <div class="box warn"><strong>⚠ 電壓注意（日本版機器）</strong>
+    本機是日本國內版，額定 <b>AC 100V、1,330W</b>，原廠保固 2 年<b>限日本國內</b>。台灣市電是 110V，插頭形狀相同可直接插，但已超出額定電壓約 10%。
+    若要保守，可加一台<b>容量 2,000W 以上的 110V→100V 降壓變壓器</b>；不建議和電鍋、電熱水壺等大功率電器共用同一條延長線。
+  </div>
+</section>
+
+<!-- 各部位 -->
+<section id="parts">
+  <h2><span class="num">2</span>各部位與控制面板</h2>
+  <div class="grid">
+    <div class="chip"><b>① 研磨調整旋鈕</b><small>在豆槽裡，5 段粗細</small></div>
+    <div class="chip"><b>② 控制面板</b><small>觸控式</small></div>
+    <div class="chip"><b>③ 咖啡抽屜</b><small>內含粉槽（濾杯），可抽出</small></div>
+    <div class="chip"><b>④ 滴水盤</b><small>可拆洗；拿掉可放較高的杯子</small></div>
+    <div class="chip"><b>⑤ 咖啡豆槽</b><small>上方，附蓋</small></div>
+    <div class="chip"><b>⑥ 水箱</b><small>1.8L，有提把，可拆</small></div>
+    <div class="chip"><b>⑦ 蒸氣噴嘴</b><small>右側，打奶泡/出熱水</small></div>
+  </div>
+
+  <h3>面板按鍵（由上而下）</h3>
+  <div class="panel">
+    <div>☕<span class="lbl">ESPRESSO<br>義式濃縮</span></div>
+    <div>☕<span class="lbl">LUNGO<br>淡式濃縮</span></div>
+    <div>☕<span class="lbl">FILTER COFFEE<br>滴濾咖啡</span></div>
+    <div>🧊<span class="lbl">COLD BREW<br>冷萃</span></div>
+    <div>●●●<span class="lbl">濃度<br>（咖啡豆圖示）</span></div>
+    <div>S M L<span class="lbl">份量</span></div>
+    <div>🌡<span class="lbl">溫度<br>（3 段）</span></div>
+    <div>&nbsp;<span class="lbl">&nbsp;</span></div>
+    <div>♨<span class="lbl">HOT WATER<br>熱水</span></div>
+    <div class="start">START<br>STOP</div>
+    <div>💨<span class="lbl">STEAM<br>蒸氣</span></div>
+    <div>&nbsp;<span class="lbl">&nbsp;</span></div>
+  </div>
+  <p class="muted">面板另有 4 個提示燈：清空咖啡抽屜、水量不足、需要清洗（Rinse）、需要除垢（CALC）。說明見 <a href="#lights">指示燈</a>。</p>
+
+  <h3>四種咖啡選單</h3>
+  <div class="table-wrap">
+  <table>
+    <tr><th>選單</th><th>特色</th><th>建議研磨</th></tr>
+    <tr><td><b>ESPRESSO</b> 義式濃縮</td><td>小杯、濃郁、有 crema，做拿鐵/卡布的基底</td><td>細（小刻度）</td></tr>
+    <tr><td><b>LUNGO</b> 淡式濃縮</td><td>用較多水萃取的濃縮，量比 Espresso 多、口感較淡</td><td>細～中</td></tr>
+    <tr><td><b>FILTER COFFEE</b> 滴濾</td><td>低壓萃取，類似手沖/美式，需等幾分鐘</td><td>粗（大刻度）</td></tr>
+    <tr><td><b>COLD BREW</b> 冷萃</td><td>常溫水萃取、苦味雜味少，約 150 ml 約 1 分 40 秒，倒冰塊即可</td><td>粗（大刻度）</td></tr>
+  </table>
+  </div>
+</section>
+
+<!-- 煮咖啡 -->
+<section id="brew">
+  <h2><span class="num">3</span>用咖啡豆煮咖啡</h2>
+  <ol>
+    <li><b>裝豆</b>：打開豆槽蓋，倒入新鮮咖啡豆。</li>
+    <li><b>加水</b>：水箱加到最高水位線。</li>
+    <li><b>放杯子</b>：杯子放在出水口下方。杯子太高時可先<b>拿掉滴水盤</b>（約多 2 cm 空間）。</li>
+    <li><b>開機</b>，選擇咖啡種類。</li>
+    <li><b>自訂設定</b>（各 3 段）：
+      <ul>
+        <li><b>濃度</b>（咖啡豆圖示 ●／●●／●●●）＝豆量多寡</li>
+        <li><b>份量</b> S／M／L</li>
+        <li><b>溫度</b> 3 段</li>
+      </ul>
+    </li>
+    <li>按 <kbd class="go">START/STOP</kbd> 開始。咖啡自動停止流出就完成了；想提早停就再按一次。</li>
+    <li><b>倒咖啡渣</b>：抽出咖啡抽屜 → 粉槽倒扣在垃圾桶上 → 按按鈕把渣推出（或輕敲）→ 用清水沖洗粉槽。</li>
+  </ol>
+
+  <h3>研磨粗細（5 段）怎麼調</h3>
+  <div class="table-wrap">
+  <table>
+    <tr><th>刻度</th><th>研磨</th><th>適合</th></tr>
+    <tr><td>小</td><td>細</td><td>濃郁、風味集中的義式濃縮</td></tr>
+    <tr><td>中</td><td>中</td><td>風味均衡</td></tr>
+    <tr><td>大</td><td>粗</td><td>滴濾咖啡、冷萃</td></tr>
+  </table>
+  </div>
+  <div class="box warn"><strong>⚠ 只能在磨豆時轉</strong>按下 START 後、聽到磨豆聲時再轉旋鈕。調整後的效果要到<b>下一杯</b>才完全感受得到（味道與流速）。</div>
+  <div class="box info"><strong>注意</strong>
+    <ul>
+      <li>選 <b>FILTER COFFEE</b> 或 <b>COLD BREW</b> 時，萃取要等幾分鐘，是低壓慢萃的正常現象。</li>
+      <li><b>煮咖啡中不要拿下水箱</b>，否則可能要重新開始。</li>
+      <li>每次煮完基本上都要倒渣、沖粉槽（使用者普遍反映「一杯一清」）。</li>
+      <li>單次最大份量（L）約 210 ml 左右，大杯/保溫瓶要連煮兩次。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 咖啡粉 -->
+<section id="ground">
+  <h2><span class="num">4</span>咖啡粉模式（例如低咖啡因咖啡粉）</h2>
+  <p>此模式不會啟動磨豆機，豆槽裡的豆子不受影響，適合晚上喝低咖啡因。</p>
+  <ol>
+    <li>抽出咖啡抽屜，取出粉槽。</li>
+    <li>倒入適量咖啡粉，<b>不要超過粉槽內的最高刻度線</b>。</li>
+    <li>粉槽裝回、開機。</li>
+    <li>選擇要煮的咖啡種類。</li>
+    <li><b>連續按濃度（咖啡豆圖示）鍵</b>，直到螢幕出現<b>咖啡粉圖示</b>。</li>
+    <li>調整份量/溫度 → <kbd class="go">START/STOP</kbd>。</li>
+    <li>煮完倒渣、沖洗粉槽。</li>
+  </ol>
+  <div class="box info"><strong>注意</strong>咖啡粉<b>太細</b>會萃取不出來；若用超細研磨粉，請<b>減少粉量</b>。</div>
+</section>
+
+<!-- 奶泡 -->
+<section id="milk">
+  <h2><span class="num">5</span>打奶泡／加熱牛奶（STEAM）</h2>
+  <ol>
+    <li><b>倒冷牛奶</b>到奶鋼杯或杯子裡。牛奶打發後會膨脹 <b>2～3 倍</b>，不要倒太滿。建議用<b>低脂（半脫脂）牛奶</b>比較好打。</li>
+    <li>按 <kbd>STEAM</kbd> 進入蒸氣模式。</li>
+    <li><b>選擇模式</b>：噴嘴上的滑套 <b>往上推＝打發＋加熱</b>（拿鐵/卡布），<b>往下推＝只加熱</b>（熱牛奶）。</li>
+    <li>把蒸氣噴嘴插入牛奶，按 <kbd class="go">START/STOP</kbd> 開始。</li>
+    <li><b>技巧</b>：先在靠近杯底處（不要碰到杯底）打約 10 秒，再傾斜杯子讓噴嘴慢慢往液面移動，噴嘴要一直保持在牛奶裡；以畫圓方式轉動杯子，奶泡會更綿密。</li>
+    <li>達到想要的溫度與質地後，再按 <kbd class="go">START/STOP</kbd> 關蒸氣。</li>
+    <li><b>馬上清潔噴嘴</b>：用濕布擦噴嘴，再噴一小下蒸氣把裡面殘留的牛奶沖掉。</li>
+  </ol>
+  <div class="box warn"><strong>⚠ 燙傷注意</strong>蒸氣噴嘴的金屬部分會非常燙，請勿觸碰；蒸氣本身也可能造成燙傷。</div>
+  <div class="box tip"><strong>💡 順序建議</strong>做拿鐵時先煮濃縮、再打奶泡；或先打奶泡再煮濃縮都可以，依個人習慣。使用者反映蒸氣容易偏「綿密泡沫」，想要較少泡沫可把滑套往下（只加熱）或縮短打發時間。</div>
+</section>
+
+<!-- 熱水 -->
+<section id="water">
+  <h2><span class="num">6</span>出熱水（HOT WATER）</h2>
+  <ol>
+    <li>在噴嘴下放好杯子或容器。</li>
+    <li>按 <kbd>HOT WATER</kbd>。</li>
+    <li>選份量：<b>S / M / L</b>。</li>
+    <li>選溫度：<b>約 70°C / 80°C / 90°C</b>（綠茶用 70～80°C，紅茶/花草茶用 90°C）。</li>
+    <li>按 <kbd class="go">START/STOP</kbd>，達到份量會自動停；想提早停就再按一次。</li>
+  </ol>
+  <div class="box warn"><strong>⚠</strong>熱水溫度很高，請勿直接接觸。</div>
+</section>
+
+<!-- 清潔 -->
+<section id="clean">
+  <h2><span class="num">7</span>日常清潔與清洗程序</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>頻率</th><th>要做的事</th></tr>
+    <tr><td><b>每次使用後</b></td><td>倒咖啡渣，用溫水沖洗粉槽（趕時間時用紙巾擦粉槽和機器端也可以）</td></tr>
+    <tr><td><b>每次打奶泡後</b></td><td>濕布擦噴嘴＋噴一下蒸氣清掉殘奶</td></tr>
+    <tr><td><b>定期</b></td><td>清空並清洗滴水盤；取出粉槽後用濕布擦出水口（萃取頭）的咖啡殘渣</td></tr>
+    <tr><td><b>定期（噴嘴深層清潔）</b></td><td>把蒸氣噴嘴管往下拉出 → 濕布擦噴嘴內部 → 噴嘴管用溫水仔細沖洗 → 裝回 → 噴一小股蒸氣</td></tr>
+    <tr><td><b>清洗燈亮時</b></td><td>執行下方「清洗程序」</td></tr>
+    <tr><td><b>CALC 燈亮時</b></td><td>執行 <a href="#descale">除垢</a></td></tr>
+  </table>
+  </div>
+
+  <h3>清洗程序（Rinse）步驟</h3>
+  <ol>
+    <li>水箱裝滿乾淨的水。</li>
+    <li>出水口下放一個 <b>70 ml</b> 以上的杯子接沖洗水。</li>
+    <li>放回<b>空的</b>粉槽。</li>
+    <li>同時按 <kbd>咖啡豆（濃度）</kbd> ＋ <kbd>ESPRESSO</kbd> 選清洗模式。</li>
+    <li>按 <kbd class="go">START/STOP</kbd> 開始。</li>
+    <li>所有咖啡圖示恢復正常顯示＝清洗完成。取出粉槽用水沖洗後即可使用。</li>
+  </ol>
+</section>
+
+<!-- 除垢 -->
+<section id="descale">
+  <h2><span class="num">8</span>除垢（CALC）</h2>
+  <div class="box info"><strong>什麼時候要除垢</strong>
+    <ul>
+      <li>沖煮約 <b>200 次</b>後 CALC 燈亮：建議除垢。</li>
+      <li>沖煮 <b>230 次</b>仍未除垢：<b>機器會鎖住無法煮飲品</b>（螢幕亮 CALC＋LUNGO＋咖啡豆圖示），必須除垢。</li>
+      <li>也可依相同步驟<b>手動</b>隨時除垢。</li>
+    </ul>
+  </div>
+  <h3>步驟</h3>
+  <ol>
+    <li><b>準備除垢液</b>：取下水箱，倒入 <b>1 公升常溫水</b>，加入<b>一整包/瓶 KRUPS 除垢劑</b>，攪拌到完全溶解，裝回機器。</li>
+    <li>在出水口<b>和</b>蒸氣噴嘴下方放一個<b>至少 2 公升</b>的容器（要接住整個過程的排出液）。</li>
+    <li><b>啟動</b>：同時<b>長按 3 秒</b> <kbd>咖啡豆（濃度）</kbd> ＋ <kbd>LUNGO</kbd>，再按 <kbd class="go">START/STOP</kbd>。</li>
+    <li>咖啡圖示會逐一亮起，表示除垢進行中。</li>
+    <li><b>過程中「水箱」燈亮起時</b>：
+      <ul>
+        <li>清空並清洗水箱；倒掉下方容器的水後放回。</li>
+        <li>水箱加清水到最高水位線並裝回 → 「水箱」燈熄滅。</li>
+        <li>再按 <kbd class="go">START/STOP</kbd> 繼續。若「水箱」燈又亮，再加水。</li>
+      </ul>
+    </li>
+    <li>要中途倒容器的水時，可按 <kbd class="go">START/STOP</kbd> 暫停。</li>
+    <li><b>完成</b>：所有咖啡圖示一起亮、CALC 燈熄滅＝除垢完成。</li>
+  </ol>
+  <p class="muted">除垢劑：原廠建議用 KRUPS 除垢劑（日本 T-fal 官網、家電量販店有售）。</p>
+</section>
+
+<!-- 指示燈 -->
+<section id="lights">
+  <h2><span class="num">9</span>指示燈代表什麼</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>指示</th><th>意思</th><th>怎麼處理</th></tr>
+    <tr><td>清空咖啡抽屜</td><td>粉槽裡還有上一杯的咖啡渣</td><td>取出粉槽倒渣、沖乾淨再用</td></tr>
+    <tr><td>水量不足</td><td>水箱水不夠／沒裝好</td><td>加水；或拿下水箱重新確實裝好</td></tr>
+    <tr><td>清洗（Rinse）</td><td>機器需要清洗</td><td>執行 <a href="#clean">清洗程序</a></td></tr>
+    <tr><td>CALC</td><td>需要除垢</td><td>執行 <a href="#descale">除垢</a></td></tr>
+    <tr><td>壓力過高警示</td><td>系統壓力太大，無法萃取（常見原因：粉太細、粉槽堵塞）</td><td>長按 START/STOP 2 秒關機 → 再開機 → 清潔粉槽 → 重新煮</td></tr>
+  </table>
+  </div>
+</section>
+
+<!-- 故障排除 -->
+<section id="trouble">
+  <h2><span class="num">10</span>故障排除</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>問題</th><th>可能原因</th><th>解決方法</th></tr>
+    <tr><td rowspan="3">無法開機</td><td>沒插電</td><td>確認插頭與插座正常</td></tr>
+    <tr><td>沒按 START/STOP</td><td>按 START/STOP</td></tr>
+    <tr><td>出水口被咖啡渣堵住</td><td>清潔粉槽</td></tr>
+    <tr><td rowspan="3">咖啡流不出來</td><td>水箱水不夠</td><td>加水</td></tr>
+    <tr><td>很久沒用</td><td>跑清洗程序，並用濕布擦出水口殘渣</td></tr>
+    <tr><td>咖啡粉太細</td><td>研磨調粗一點</td></tr>
+    <tr><td>咖啡量變少</td><td>水垢</td><td>除垢</td></tr>
+    <tr><td rowspan="2">太淡或太濃</td><td>研磨設定不對</td><td>調整研磨（磨豆時轉）</td></tr>
+    <tr><td>濃度設定不對</td><td>調整濃度（咖啡豆圖示）</td></tr>
+    <tr><td rowspan="2">咖啡不夠熱</td><td>杯子沒預熱</td><td>先用熱水燙杯（可用 HOT WATER）</td></tr>
+    <tr><td>溫度設定太低</td><td>把溫度調高</td></tr>
+    <tr><td>磨豆機不動</td><td>豆槽沒豆</td><td>加豆</td></tr>
+    <tr><td>噴嘴沒有蒸氣</td><td>噴嘴堵塞</td><td>仔細清潔噴嘴（拉下噴嘴管清洗）</td></tr>
+    <tr><td>CALC 亮、不能煮</td><td>需要除垢</td><td>執行除垢</td></tr>
+    <tr><td>CALC 一直亮</td><td>除垢沒跑完</td><td>完整跑完一次除垢</td></tr>
+    <tr><td>機器底部漏水</td><td>滴水盤滿了或沒放好</td><td>清空滴水盤並放正</td></tr>
+    <tr><td>機器卡住、怪怪的</td><td>—</td><td>按 START/STOP 關機 → <b>拔插頭等 1 分鐘</b> → 插回再開機；若還沒除垢就做一次除垢</td></tr>
+  </table>
+  </div>
+  <p class="muted">問題持續時聯絡日本 T-fal 客服（ティファールお客様相談センター）：0570-077-772</p>
+</section>
+
+<!-- 配方 -->
+<section id="recipe">
+  <h2><span class="num">11</span>飲品配方建議</h2>
+  <p class="muted">以下為一般配方參考；原廠另有線上食譜，見文末連結。</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>飲品</th><th>做法</th></tr>
+    <tr><td><b>拿鐵</b></td><td>ESPRESSO 1 杯 ＋ 牛奶約 150 ml（STEAM 滑套往上，打少量奶泡）</td></tr>
+    <tr><td><b>卡布奇諾</b></td><td>ESPRESSO 1 杯 ＋ 牛奶約 100 ml，打較多奶泡（膨脹約 2 倍）</td></tr>
+    <tr><td><b>冰拿鐵</b></td><td>杯裡放冰塊＋冷牛奶約 150 ml，再把 ESPRESSO 倒上去</td></tr>
+    <tr><td><b>冰美式</b></td><td>杯裡放冰塊，直接用 COLD BREW 或 LUNGO 萃取</td></tr>
+    <tr><td><b>冷萃咖啡</b></td><td>COLD BREW、研磨調粗，杯中加冰塊</td></tr>
+    <tr><td><b>Espresso Tonic</b></td><td>冰塊＋通寧水約 120 ml，最後慢慢倒入 ESPRESSO</td></tr>
+    <tr><td><b>阿法奇朵 Affogato</b></td><td>香草冰淇淋一球，淋上一杯 ESPRESSO</td></tr>
+    <tr><td><b>熱可可／熱牛奶</b></td><td>STEAM 滑套往下（只加熱）加熱牛奶，加可可粉攪拌</td></tr>
+  </table>
+  </div>
+</section>
+
+<!-- 規格 -->
+<section id="spec">
+  <h2><span class="num">12</span>產品規格（日本版 SA403BJ0）</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>項目</th><th>規格</th></tr>
+    <tr><td>種類</td><td>全自動義式咖啡機（自動研磨、自動填壓）</td></tr>
+    <tr><td>尺寸（寬×深×高）</td><td>約 15 × 29 × 36 cm</td></tr>
+    <tr><td>重量</td><td>約 4.76 kg</td></tr>
+    <tr><td>電源 / 消耗功率</td><td>AC 100V（日本規格）／ 1,330 W</td></tr>
+    <tr><td>電源線長</td><td>約 1 m</td></tr>
+    <tr><td>幫浦</td><td>最大 15 bar（萃取時約 6～9 bar）</td></tr>
+    <tr><td>磨豆機</td><td>不鏽鋼錐刀，5 段粗細</td></tr>
+    <tr><td>咖啡選單</td><td>Espresso、Lungo、Filter Coffee、Cold Brew</td></tr>
+    <tr><td>可調設定</td><td>濃度（豆量）3 段、份量 3 段、溫度 3 段</td></tr>
+    <tr><td>其他功能</td><td>咖啡粉模式、蒸氣奶泡、熱水（70/80/90°C）</td></tr>
+    <tr><td>水箱</td><td>1.8 L，可拆</td></tr>
+    <tr><td>濾杯</td><td>免濾紙（不可用濾紙、不支援膠囊）、無保溫功能</td></tr>
+    <tr><td>保養程序</td><td>清洗（Rinse）程序、除垢（CALC）程序，皆有提示燈</td></tr>
+    <tr><td>保固</td><td>2 年（日本國內）</td></tr>
+    <tr><td>日本參考售價</td><td>¥70,000（含稅）</td></tr>
+  </table>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  資料來源：
+  <a href="https://dam.groupeseb.com/m/71ab942ba0ce1c41/original/8020012982-IFU-pdf.pdf" target="_blank" rel="noopener">KRUPS Coffee Crush SA403 原廠多語手冊（PDF，含繁中）</a>・
+  <a href="https://www.t-fal.co.jp/krups/coffeecrush/products/coffeecrush-experience-8010001530" target="_blank" rel="noopener">日本 T-fal 官方產品頁（含日文說明書下載、食譜）</a>・
+  PR TIMES 新品發表・Amazon.co.jp 使用者評價
+  <br>標示「實用建議」者為一般使用經驗，非原廠說明。整理日期 2026-10-16。
+</footer>
+
+</body>
+</html>
